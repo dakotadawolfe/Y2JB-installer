@@ -2,7 +2,7 @@
 
 A standalone ELF that installs YouTube and the official Y2JB Autoloader image on a privileged PS5 running **firmware 13.60**.
 
-**It installs Y2JB and exits. It does not change DNS, activate accounts, or restart the console.**
+It handles the YouTube installation, writes `download0.dat`, verifies the installed image, and displays a completion notification.
 
 ## Download and use
 
@@ -11,13 +11,13 @@ Download `Y2JB-installer.elf` from [Releases](https://github.com/dakotadawolfe/Y
 1. Start a privileged session on firmware 13.60.
 2. Close YouTube completely and ensure at least 2 GiB of internal storage is free.
 3. Run the installer through your payload loader.
-4. Wait for the success notification, then launch YouTube. The console stays running.
+4. Wait for the success notification, then launch YouTube.
 
 The installer targets US YouTube `PPSA01650`, package `v01.000.030`. A matching package is reused; a different package is left alone and installation stops. Your profile must already meet YouTube's account requirements.
 
 It writes the unmodified official `download0.dat`. Existing images are backed up under `/data/y2jb-installer/`. The new image is verified before activation and read back afterward. An interrupted installation can leave YouTube installed; rerunning can finish the image step. The app keeps its normal YouTube name and artwork.
 
-The installer does not launch any additional payloads. Launching YouTube afterward runs upstream Y2JB Autoloader, which follows its own autoload configuration.
+Launching YouTube afterward runs upstream Y2JB Autoloader, which follows its own autoload configuration.
 
 ## Build
 
@@ -36,7 +36,7 @@ Outputs are in `dist/`: `Y2JB-installer.elf`, `SHA256SUMS.txt`, and `build-manif
 
 Verification checks dependency hashes, official image identity, sparse reconstruction, UFS2 files and permissions, and embedded assets. Tests cover malformed images, sparse file I/O, and failure handling.
 
-**v2.0.0 is a new implementation and still requires console testing.** Earlier versions' test results do not validate this version.
+**Validation:** Host build and eight tests passed. Console testing of v2.0.0 is pending.
 
 ## Credits
 
