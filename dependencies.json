@@ -1,0 +1,66 @@
+{
+  "installer": {
+    "repository": "https://github.com/jamesst20/ps5-y2jb-installer",
+    "commit": "c93f88a1a5cabd1c2455d6a6371fc29efbbc870d"
+  },
+  "y2jb": {
+    "repository": "https://github.com/itsPLK/ps5-y2jb-autoloader",
+    "commit": "ba879c8609f0d9e8208fd9a64ca678ed47bd4291",
+    "tag": "v1.1.0-ba879c8",
+    "image_url": "https://github.com/itsPLK/ps5-y2jb-autoloader/releases/download/v1.1.0-ba879c8/download0.dat",
+    "image_sha256": "0a7490e8621d242c5d6742e285f39ff0724309c9742ca41d1ecdbfbfd32f5ac4",
+    "image_size": 336789504
+  },
+  "sdk": {
+    "repository": "https://github.com/ps5-payload-dev/sdk",
+    "commit": "a7685ce8e97ce1f8a4f38253a41d54241c9124f1",
+    "archive": "vendor/archives/sdk.zip"
+  },
+  "http": {
+    "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.1.tar.gz",
+    "archive": "vendor/archives/libmicrohttpd-1.0.1.tar.gz"
+  },
+  "files": {
+    "vendor/archives/libmicrohttpd-1.0.1.tar.gz": "a89e09fc9b4de34dde19f4fcb4faaa1ce10299b9908db1132bbfa1de47882b94",
+    "vendor/archives/sdk.zip": "3960a82f82ed1eb4cf30e6ad72bdd148aed8f5109075cec9a7a851a76f31fb95",
+    "vendor/installer/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "vendor/installer/pkgs/youtube.json": "b1aa1192e361033f6f9244590504bd8afa5e72d3c32f1bac32618695a7e43956",
+    "vendor/installer/src/config.h": "8fd1377748fa0f07151adf77f999c086673e639080f17296682df7d3696bce37",
+    "vendor/installer/src/crypto/sha256.c": "07fa03892b73399d3896f5d1f052c59d9ec069c59c9beaa43281e9dba3f02fb4",
+    "vendor/installer/src/crypto/sha256.h": "7ee812fa8f3d2fe8a15c7a9f8da0409263993d3b5eac9b8d524dec76a19c02b9",
+    "vendor/installer/src/install/install.c": "61aff503c42d602c70f4d450ca8538e460650ecefc9d3b931de7f77b8e447645",
+    "vendor/installer/src/install/install.h": "8b55e0b684501a86645025e4ea9f92a403e0c5f669ee6543ac620d1f890a8a62",
+    "vendor/installer/src/install/installed.c": "3eb67ac1a6a19b672a85c6e242511ed48e113ddb31e53d23f23d151d86979640",
+    "vendor/installer/src/install/installed.h": "11ab1ff7337c5837244e5c509800d5029ea69d26b086adb8dd4f91c8d9ef198d",
+    "vendor/installer/src/install/loopback.c": "f98bfb052f27794d562e9e2436f784c29f8c57da462a4252c379f8cbc3cb0db0",
+    "vendor/installer/src/install/loopback.h": "8485f4a1658aa0e5fe620b415df593ffca5a8e0480b00d1db0103c392637d861",
+    "vendor/installer/src/install/sce_appinst.h": "41b467d3815ce6a6270c9bd337632e392e2acb911665f0714c5f60eb06dab570",
+    "vendor/installer/src/titles.c": "9a2d0ebe6459b6fc49077f8e7414269a84aca69e75be8983730cdc13b9ab9d10",
+    "vendor/installer/src/titles.h": "490dd4e6da17a8639dabebd6f55c5a0b3a3d4e6c83e226f078b638010e21b915",
+    "vendor/installer/third_party/cjson/cJSON.c": "75c51de8fa40ac9d7a99319c6330719bd692eb81c0a869265f3d4c682533f9b9",
+    "vendor/installer/third_party/cjson/cJSON.h": "0578cc29132912edbc88f83207a8fc76e5db3db0605497e909a9384ef3cc474b",
+    "vendor/installer/third_party/cjson/LICENSE": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c",
+    "vendor/y2jb/.gitignore": "dbeadf4b9d5a194dc6414781abf4c786a6b8717e5a50954c956084f304f3a7ea",
+    "vendor/y2jb/build.sh": "5d53b09ff8a83fa2d061fbe07247d9720ed5d0fcb5fcba03ccaa7b4099229351",
+    "vendor/y2jb/CHANGELOG.md": "e55184eb4636f3e5c281fba00680d056b309460b344aed7be0d2eb574b4e4db7",
+    "vendor/y2jb/DONATE.md": "2096291199ec614303e90a45db2f2f4f1903e6e9f058dc39cec2930fac509c1b",
+    "vendor/y2jb/LICENSE": "7d0318fc882cd315a0dc0c9e02cd707eeb28483158b60e4c2d17e7bd268e3ded",
+    "vendor/y2jb/LICENSE-MIT": "d69d7b3667605c1d354f34ab45867728a87817f879bda2e0144b71708738da9b",
+    "vendor/y2jb/Makefile": "320d505d80a90f5b1c8ede93190510f5014d936822c948c8215745aac83822d4",
+    "vendor/y2jb/README.md": "64a7db09b41208a6f4ff6743de8a5bebe8956e8c511dd3ef6e86f086c780c353",
+    "vendor/y2jb/scripts/download_deps.sh": "c7bf8919a0fa229c5b81614adfd2b767689278c117c6fe99378cb33bed709008",
+    "vendor/y2jb/src/aioshellcode.js": "6bd817dd20ca516e79f1e13852f9bdda141fbdbd4c0868167cbcd887145f7163",
+    "vendor/y2jb/src/autoload.js": "9c4bcb31ceaafde69cf0cebaa8259f125f5d98753af44cf047b2a09532a7d441",
+    "vendor/y2jb/src/global.js": "2d5e3f72a907a45172c13d73603fa95267c4dcf70d8ee67787b6179bcb77fdf5",
+    "vendor/y2jb/src/icon0.png": "65e57a3dc6f3033ea45f1f68c802f64493b0cecdfd584d315168ba15d69ccd76",
+    "vendor/y2jb/src/kernel.js": "f70b4753a224b1d14b874a0faa9ec0be03799851c11d6a1ad9b808adae70842d",
+    "vendor/y2jb/src/lapse.js": "5b35daa71de50e71844d20bc852aee8ee18229c580216200e9829889bcef15fd",
+    "vendor/y2jb/src/main.js": "b551469e8793a5e3c4cd35d8fe4cc05a7c45abc61cce2ed9a6f06637fcf0df1c",
+    "vendor/y2jb/src/misc.js": "f117909fac20378ca42200b8b8d0ff33d75d26babd30a753d0d71954167780e9",
+    "vendor/y2jb/src/relapse.js": "0e546c05df9b8369f67c92ef0d874b243877c71ae605540c8ec4363e331598ba",
+    "vendor/y2jb/src/splash.html": "769a25c70a401d90835df750e0cd0ba87914bbabe77cbb18166390bd863c61cb",
+    "vendor/y2jb/src/update.js": "c2f93574952086391539958d5df430af0ae1de4f05c3d33ec50492dd348a20ba",
+    "vendor/y2jb/y2jb_screenshot.png": "dc0f67015e52984ed55021c5ab4dd190e62be3eac8c4add9630fec15950c0d89",
+    "assets/download0.dat.gz": "a05edcf8c2c1c42a4161e0974797bfcb263a1c46a6a47e5417d7a9d892769f1d"
+  }
+}
